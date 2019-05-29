@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".main.Dashboard"
+    android:background="@drawable/gradientbackground"
+    tools:showIn="@layout/app_bar_dashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_height="160sp"/>
+
+        <LinearLayout
+            android:id="@+id/SliderDots"
+            android:layout_below="@+id/viewPager"
+            android:orientation="horizontal"
+            android:layout_marginTop="6sp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginLeft="10sp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="140sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Select Services"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:layout_marginTop="10sp"
+                android:layout_marginLeft="10sp"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_margin="6sp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_height="1sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/machine_wash"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:translationZ="1sp"
+                    android:background="@color/white"
+                    android:layout_marginTop="6sp"
+                    android:layout_marginBottom="6sp"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="30sp"
+                        android:background="@drawable/ic_washing"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_margin="4sp"
+                        android:layout_height="30sp" />
+
+                    <TextView
+                        android:id="@+id/machine_wash_text"
+                        android:layout_width="wrap_content"
+                        android:text="Machine Wash / Fold"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="6sp"
+                        android:textSize="12sp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="2sp"
+                    android:background="#fff"
+                    android:layout_marginTop="6sp"
+                    android:layout_marginBottom="6sp"
+                    android:layout_height="match_parent"/>
+
+                <LinearLayout
+                    android:id="@+id/wash_iron"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:translationZ="1sp"
+                    android:layout_marginTop="6sp"
+                    android:layout_marginBottom="6sp"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="30sp"
+                        android:background="@drawable/ic_clothes"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_margin="4sp"
+                        android:layout_height="30sp" />
+
+                    <TextView
+                        android:id="@+id/wash_iron_text"
+                        android:layout_width="wrap_content"
+                        android:text="Wash / Iron"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginTop="6sp"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="2sp"
+                    android:background="#fff"
+                    android:layout_marginTop="6sp"
+                    android:layout_marginBottom="6sp"
+                    android:layout_height="match_parent"/>
+
+                <LinearLayout
+                    android:id="@+id/premium_services"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:translationZ="1sp"
+                    android:layout_marginTop="6sp"
+                    android:layout_marginBottom="6sp"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="30sp"
+                        android:background="@drawable/ic_premium"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_margin="4sp"
+                        android:layout_height="30sp" />
+
+                    <TextView
+                        android:id="@+id/premium_services_text"
+                        android:layout_width="wrap_content"
+                        android:text="Premium Services"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="6sp"
+                        android:textSize="12sp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="2sp"
+                    android:background="#fff"
+                    android:layout_marginTop="6sp"
+                    android:layout_marginBottom="6sp"
+                    android:layout_height="match_parent"/>
+
+                <LinearLayout
+                    android:id="@+id/dry_clean"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:translationZ="1sp"
+                    android:background="@color/white"
+                    android:layout_marginTop="6sp"
+                    android:layout_marginBottom="6sp"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="30sp"
+                        android:background="@drawable/ic_dry"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_margin="4sp"
+                        android:layout_height="30sp" />
+
+                    <TextView
+                        android:id="@+id/dry_clean_text"
+                        android:layout_width="wrap_content"
+                        android:text="Dry Clean"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:layout_marginTop="6sp"
+                        android:textSize="12sp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/proceed_button"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginRight="10sp"
+                android:layout_marginLeft="10sp"
+                android:text="PROCEED"
+                android:textColor="@color/white"
+                android:background="@drawable/ic_launcher_background"
+                android:layout_height="40sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginLeft="10sp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="140sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Other Services"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:layout_marginTop="10sp"
+                android:layout_marginLeft="10sp"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_margin="6sp"
+                android:layout_marginTop="6sp"
+                android:layout_marginBottom="6sp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_height="1sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/Home_Cleaning"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:translationZ="1sp"
+                    android:layout_marginTop="6sp"
+                    android:background="@color/white"
+                    android:layout_marginBottom="6sp"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="30sp"
+                        android:background="@drawable/ic_house"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_margin="4sp"
+                        android:layout_height="30sp" />
+
+                    <TextView
+                        android:id="@+id/Home_Cleaning_text"
+                        android:layout_width="wrap_content"
+                        android:text="Home Cleaning"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="6sp"
+                        android:textSize="12sp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="2sp"
+                    android:background="#fff"
+                    android:layout_marginTop="6sp"
+                    android:layout_marginBottom="6sp"
+                    android:layout_height="match_parent"/>
+
+                <LinearLayout
+                    android:id="@+id/Car_Cleaning"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:translationZ="1sp"
+                    android:layout_marginTop="6sp"
+                    android:background="@color/white"
+                    android:layout_marginBottom="6sp"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="30sp"
+                        android:background="@drawable/ic_car_wash"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_margin="4sp"
+                        android:layout_height="30sp" />
+
+                    <TextView
+                        android:id="@+id/Car_Cleaning_text"
+                        android:layout_width="wrap_content"
+                        android:text="Car Cleaning"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="6sp"
+                        android:textSize="12sp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/other_button"
+            android:layout_marginBottom="10sp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginRight="10sp"
+                android:layout_marginLeft="10sp"
+                android:text="PROCEED"
+                android:textColor="@color/white"
+                android:background="@drawable/ic_launcher_background"
+                android:layout_height="40sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="New Arrivals"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:layout_marginTop="10sp"
+                android:layout_marginLeft="10sp"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_margin="6sp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_height="1sp"/>
+
+            <ImageView
+                android:id="@+id/viewPager2"
+                android:layout_width="match_parent"
+                android:background="@drawable/arrival"
+                android:layout_margin="6sp"
+                android:layout_height="130dp"
+                android:layout_marginBottom="8dp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="20sp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Customer Testimonials"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:layout_marginTop="10sp"
+                android:layout_marginLeft="10sp"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_margin="6sp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_height="1sp"/>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager3"
+                android:layout_width="match_parent"
+                android:layout_margin="6sp"
+                android:background="@drawable/testimonialphoto"
+                android:layout_height="130dp"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:id="@+id/SliderDots3"
+                android:layout_below="@+id/viewPager"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
