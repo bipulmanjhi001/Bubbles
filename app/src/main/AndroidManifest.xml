@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.bubbles">
+    package="com.bubbleswash">
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -22,7 +22,7 @@
         android:required="true" />
 
     <application
-        android:name=".model.BubblesApplication"
+        android:name="com.bubbleswash.model.BubblesApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -31,18 +31,18 @@
         android:usesCleartextTraffic="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".main.PlacedOrder"/>
-        <activity android:name=".main.TimeSlot" />
-        <activity android:name=".main.AddressList" />
+        <activity android:name="com.bubbleswash.main.PlacedOrder"/>
+        <activity android:name="com.bubbleswash.main.TimeSlot" />
+        <activity android:name="com.bubbleswash.main.AddressList" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyATlqcUmn3GtnmPvYlmtMFazsP9pyf4rxs" />
 
         <activity
-            android:name=".main.MapsActivity"
+            android:name="com.bubbleswash.main.MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name=".main.Splashscreen">
+        <activity android:name="com.bubbleswash.main.Splashscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -50,13 +50,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".main.Dashboard"
+            android:name="com.bubbleswash.main.Dashboard"
             android:label="@string/title_activity_dashboard" />
         <activity
-            android:name=".main.Login"
+            android:name="com.bubbleswash.main.Login"
             android:label="Login" />
         <activity
-            android:name=".main.OTP"
+            android:name="com.bubbleswash.main.OTP"
             android:label="OTP" />
     </application>
 

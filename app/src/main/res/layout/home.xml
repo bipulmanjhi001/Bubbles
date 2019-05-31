@@ -363,9 +363,11 @@
 
 
         <LinearLayout
+            android:id="@+id/arrival_layout"
             android:layout_width="match_parent"
             android:orientation="vertical"
             android:layout_marginLeft="10sp"
+            android:visibility="gone"
             android:layout_marginRight="10sp"
             android:layout_height="wrap_content">
 
@@ -385,13 +387,13 @@
                 android:layout_height="1sp"/>
 
             <ImageView
-                android:id="@+id/viewPager2"
+                android:id="@+id/arrival"
                 android:layout_width="match_parent"
-                android:background="@drawable/arrival"
+                android:layout_gravity="center"
                 android:layout_margin="6sp"
-                android:layout_height="130dp"
-                android:layout_marginBottom="8dp"/>
-
+                android:background="@drawable/ic_launcher_background"
+                android:gravity="center"
+                android:layout_height="match_parent" />
 
         </LinearLayout>
         <LinearLayout

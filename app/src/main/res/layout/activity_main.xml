@@ -8,7 +8,7 @@
     android:gravity="center"
     android:background="@drawable/gradientbackground"
     app:layout_anchorGravity="center"
-    tools:context="com.bubbles.main.Dashboard">
+    tools:context="com.bubbleswash.main.Dashboard">
 
     <ImageView
         android:layout_width="120sp"
