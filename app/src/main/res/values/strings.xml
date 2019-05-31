@@ -16,5 +16,7 @@
     <string name="menu_send">Send</string>
     <string name="prompt_phone">Enter Mobile No.</string>
     <string name="prompt_otp">Enter Your OTP</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="error_field_required">This field is required</string>
 
 </resources>

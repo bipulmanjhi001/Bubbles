@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".main.PlacedOrder">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/PopupOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:titleTextColor="#fff"
+                app:popupTheme="@style/AppBarOverlay">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="ORDER PLACED"
+                        android:textColor="#fff"
+                        android:textSize="16dp"
+                        android:textStyle="normal"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="30sp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="60sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/ic_icon"
+                android:layout_height="60sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Thank you"
+                android:layout_marginTop="10sp"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="normal"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="30sp"
+            android:layout_marginBottom="20sp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Order ID"
+                android:layout_marginTop="10sp"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="normal"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="S012344"
+                android:layout_marginTop="10sp"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="6sp"
+            android:layout_marginBottom="6sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="1sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/select_button"
+            android:layout_margin="40sp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Note"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="6sp"
+                android:layout_marginBottom="6sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_height="1sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:text="Delivery Time for Dry Cleaning may very \n according to garment type"
+                android:layout_margin="10sp"
+                android:textSize="13sp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="normal"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:text="Know More Details about our services feel \n free to contact us"
+                android:layout_margin="10sp"
+                android:textSize="13sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/address_staff"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:focusable="true"
+        android:gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="DONE"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:focusable="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>
